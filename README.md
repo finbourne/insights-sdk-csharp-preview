@@ -7,6 +7,8 @@ The Insights application is a monitoring and troubleshooting service.
 
 For more details on other applications in the LUSID platform, see [Understanding all the applications in the LUSID platform](https://support.lusid.com/knowledgebase/article/KA-01787/en-us).
 
+[C# SDK Extensions](https://github.com/finbourne/insights-sdk-extensions-csharp) to accompany this SDK are available. These provides the user with additional extensions to make it easy to configure and use the API endpoints.
+
 ## Installation
 
 The NuGet package for the FINBOURNE Insights service SDK (Preview) can installed from https://www.nuget.org/packages/Finbourne.Insights.Sdk.Preview using the following:
