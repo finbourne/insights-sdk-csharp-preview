@@ -4,17 +4,17 @@ All URIs are relative to *https://www.lusid.com/insights*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetRequest**](RequestsApi.md#getrequest) | **GET** /api/requests/{id}/request | [BETA] GetRequest: Get the request content for a specific API request.
-[**GetRequestLog**](RequestsApi.md#getrequestlog) | **GET** /api/requests/{id} | [BETA] GetRequestLog: Get the log for a specific API request.
-[**GetResponse**](RequestsApi.md#getresponse) | **GET** /api/requests/{id}/response | [BETA] GetResponse: Get the response for a specific API request.
-[**ListRequestLogs**](RequestsApi.md#listrequestlogs) | **GET** /api/requests | [BETA] ListRequestLogs: Get the logs for API requests.
+[**GetRequest**](RequestsApi.md#getrequest) | **GET** /api/requests/{id}/request | [EARLY ACCESS] GetRequest: Get the request content for a specific API request.
+[**GetRequestLog**](RequestsApi.md#getrequestlog) | **GET** /api/requests/{id} | [EARLY ACCESS] GetRequestLog: Get the log for a specific API request.
+[**GetResponse**](RequestsApi.md#getresponse) | **GET** /api/requests/{id}/response | [EARLY ACCESS] GetResponse: Get the response for a specific API request.
+[**ListRequestLogs**](RequestsApi.md#listrequestlogs) | **GET** /api/requests | [EARLY ACCESS] ListRequestLogs: Get the logs for API requests.
 
 
 <a name="getrequest"></a>
 # **GetRequest**
 > Request GetRequest (string id)
 
-[BETA] GetRequest: Get the request content for a specific API request.
+[EARLY ACCESS] GetRequest: Get the request content for a specific API request.
 
 ### Example
 ```csharp
@@ -40,7 +40,7 @@ namespace Example
 
             try
             {
-                // [BETA] GetRequest: Get the request content for a specific API request.
+                // [EARLY ACCESS] GetRequest: Get the request content for a specific API request.
                 Request result = apiInstance.GetRequest(id);
                 Debug.WriteLine(result);
             }
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 # **GetRequestLog**
 > RequestLog GetRequestLog (string id)
 
-[BETA] GetRequestLog: Get the log for a specific API request.
+[EARLY ACCESS] GetRequestLog: Get the log for a specific API request.
 
 ### Example
 ```csharp
@@ -114,7 +114,7 @@ namespace Example
 
             try
             {
-                // [BETA] GetRequestLog: Get the log for a specific API request.
+                // [EARLY ACCESS] GetRequestLog: Get the log for a specific API request.
                 RequestLog result = apiInstance.GetRequestLog(id);
                 Debug.WriteLine(result);
             }
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 # **GetResponse**
 > Response GetResponse (string id)
 
-[BETA] GetResponse: Get the response for a specific API request.
+[EARLY ACCESS] GetResponse: Get the response for a specific API request.
 
 ### Example
 ```csharp
@@ -188,7 +188,7 @@ namespace Example
 
             try
             {
-                // [BETA] GetResponse: Get the response for a specific API request.
+                // [EARLY ACCESS] GetResponse: Get the response for a specific API request.
                 Response result = apiInstance.GetResponse(id);
                 Debug.WriteLine(result);
             }
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 # **ListRequestLogs**
 > ResourceListWithHistogramOfRequestLog ListRequestLogs (string filter = null, string sortBy = null, int? limit = null, string page = null, string histogramInterval = null)
 
-[BETA] ListRequestLogs: Get the logs for API requests.
+[EARLY ACCESS] ListRequestLogs: Get the logs for API requests.
 
 ### Example
 ```csharp
@@ -266,7 +266,7 @@ namespace Example
 
             try
             {
-                // [BETA] ListRequestLogs: Get the logs for API requests.
+                // [EARLY ACCESS] ListRequestLogs: Get the logs for API requests.
                 ResourceListWithHistogramOfRequestLog result = apiInstance.ListRequestLogs(filter, sortBy, limit, page, histogramInterval);
                 Debug.WriteLine(result);
             }
