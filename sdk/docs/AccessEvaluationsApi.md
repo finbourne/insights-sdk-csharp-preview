@@ -4,7 +4,7 @@ All URIs are relative to *https://www.lusid.com/insights*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetAccessEvaluationLog**](AccessEvaluationsApi.md#getaccessevaluationlog) | **GET** /api/access/{id} | [EXPERIMENTAL] GetAccessEvaluationLog: Get the log for a specific access evaluation.
+[**GetAccessEvaluationLog**](AccessEvaluationsApi.md#getaccessevaluationlog) | **GET** /api/access/{id} | [EXPERIMENTAL] GetAccessEvaluationLog: Get the log for a specific access evaluation.  This endpoint will be deprecated in the near future.
 [**ListAccessEvaluationLogs**](AccessEvaluationsApi.md#listaccessevaluationlogs) | **GET** /api/access | [EXPERIMENTAL] ListAccessEvaluationLogs: List the logs for access evaluations.
 
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 # **GetAccessEvaluationLog**
 > AccessEvaluationLog GetAccessEvaluationLog (string id)
 
-[EXPERIMENTAL] GetAccessEvaluationLog: Get the log for a specific access evaluation.
+[EXPERIMENTAL] GetAccessEvaluationLog: Get the log for a specific access evaluation.  This endpoint will be deprecated in the near future.
 
 ### Example
 ```csharp
@@ -38,7 +38,7 @@ namespace Example
 
             try
             {
-                // [EXPERIMENTAL] GetAccessEvaluationLog: Get the log for a specific access evaluation.
+                // [EXPERIMENTAL] GetAccessEvaluationLog: Get the log for a specific access evaluation.  This endpoint will be deprecated in the near future.
                 AccessEvaluationLog result = apiInstance.GetAccessEvaluationLog(id);
                 Debug.WriteLine(result);
             }
