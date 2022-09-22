@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 
 <a name="listaccessevaluationlogs"></a>
 # **ListAccessEvaluationLogs**
-> ResourceListWithHistogramOfAccessEvaluationLog ListAccessEvaluationLogs (string filter = null, string sortBy = null, int? limit = null, string page = null, string histogramInterval = null)
+> ResourceListWithHistogramOfAccessEvaluationLog ListAccessEvaluationLogs (DateTimeOffset? startAt = null, DateTimeOffset? endAt = null, string filter = null, string sortBy = null, int? limit = null, string page = null, string histogramInterval = null)
 
 [EXPERIMENTAL] ListAccessEvaluationLogs: List the logs for access evaluations.
 
@@ -108,6 +108,8 @@ namespace Example
             config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new AccessEvaluationsApi(config);
+            var startAt = 2013-10-20T19:20:30+01:00;  // DateTimeOffset? | Start date from which point to fetch logs. (optional) 
+            var endAt = 2013-10-20T19:20:30+01:00;  // DateTimeOffset? | End date to which point to fetch logs. (optional) 
             var filter = filter_example;  // string | Expression to filter the result set. Read more about <see href=\"https://support.lusid.com/filtering-results-from-lusid\"> filtering results from LUSID</see>. (optional) 
             var sortBy = sortBy_example;  // string | Order the results by these fields. Use the '-' sign to denote descending order e.g. -MyFieldName. Multiple fields can be denoted by a comma e.g. -MyFieldName,AnotherFieldName,-AFurtherFieldName (optional) 
             var limit = 56;  // int? | When paginating, only return this number of records. The minimum value is 0 and the maximum is 10000. (optional) 
@@ -117,7 +119,7 @@ namespace Example
             try
             {
                 // [EXPERIMENTAL] ListAccessEvaluationLogs: List the logs for access evaluations.
-                ResourceListWithHistogramOfAccessEvaluationLog result = apiInstance.ListAccessEvaluationLogs(filter, sortBy, limit, page, histogramInterval);
+                ResourceListWithHistogramOfAccessEvaluationLog result = apiInstance.ListAccessEvaluationLogs(startAt, endAt, filter, sortBy, limit, page, histogramInterval);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -135,6 +137,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **startAt** | **DateTimeOffset?**| Start date from which point to fetch logs. | [optional] 
+ **endAt** | **DateTimeOffset?**| End date to which point to fetch logs. | [optional] 
  **filter** | **string**| Expression to filter the result set. Read more about &lt;see href&#x3D;\&quot;https://support.lusid.com/filtering-results-from-lusid\&quot;&gt; filtering results from LUSID&lt;/see&gt;. | [optional] 
  **sortBy** | **string**| Order the results by these fields. Use the &#39;-&#39; sign to denote descending order e.g. -MyFieldName. Multiple fields can be denoted by a comma e.g. -MyFieldName,AnotherFieldName,-AFurtherFieldName | [optional] 
  **limit** | **int?**| When paginating, only return this number of records. The minimum value is 0 and the maximum is 10000. | [optional] 
